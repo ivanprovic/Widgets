@@ -29,7 +29,7 @@ const Search = () => {
             });
 
             setResults(data.query.search);
-        };
+        }; 
         search();
     }, [debouncedTerm]);
 
@@ -63,7 +63,7 @@ const Search = () => {
         <div>
             <div className= "ui form">
                 <div className="field">
-                    <label>Enter Search Term</label>
+                    <label>Search for a term</label>
                     <input
                         value={term}
                         onChange={(e) => setTerm(e.target.value)}
